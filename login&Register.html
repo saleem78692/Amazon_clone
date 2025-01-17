@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-straight/css/uicons-regular-straight.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>LOGIN & Register</title>
+    <style>
+        /*=============== GOOGLE FONTS ===============*/
+        @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Spartan:wght@400;500;600;700&display=swap");
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: 'Lato', sans-serif;
+            background-image: url('giphy.gif');
+        }
+        .section--lg{
+            padding: 50px 0;
+        }
+        .login-register{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 300px;
+        }
+        .login{
+            height: 500px;
+            width: 500px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .register{
+            height: 500px;
+            width: 500px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .section__title{
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        .form{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+
+        .form__input{
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            outline: none;
+        }
+        .form__btn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .btn{
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            outline: none;
+        }
+        .btn:hover{
+            background-color: #0056b3;
+        }
+
+    </style>
+</head>
+
+<body>
+    <section class="login-register section--lg">
+        <div class="login-register">
+            <div class="login">
+                <h3 class="section__title">Login</h3>
+                <form class="form grid">
+                    <input type="email" placeholder="Your Email" class="form__input" />
+                    <input type="password" placeholder="Your Password" class="form__input" />
+                    <div class="form__btn">
+                        <button type="submit" class="btn">Login</button>
+                    </div>
+                </form>
+            </div>
+            <div class="register">
+                <h3 class="section__title">Create an Account</h3>
+                <form class="form grid">
+                    <input type="text" placeholder="Username" class="form__input" />
+                    <input type="email" placeholder="Your Email" class="form__input" />
+                    <input type="password" placeholder="Your Password" class="form__input" />
+                    <input type="password" placeholder="Confirm Password" class="form__input" />
+                    <div class="form__btn">
+                        <button type="submit" class="btn">Submit & Register</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
